@@ -12,16 +12,12 @@ clean:
 
 .PHONY: build-static
 build-static:
-	gulp static
+	npm run gulp:static
 
 .PHONY: npm-install
 npm-install:
 	npm i
 
-.PHONY: gulp-install
-gulp-install:
-	npm install gulp-cli -g
-
 .PHONY: init
-init: npm-install gulp-install build-static
+init: npm-install build-static
 

@@ -1,6 +1,6 @@
 # Web Starter NodeJS
 
-### Overview
+## Overview
 
 The aim of this template is to give you a head start in setting up a new web application for Companies House.
 
@@ -23,11 +23,11 @@ The template uses [Express](https://expressjs.com), [TypeScript](https://typescr
 If you are familiar with NodeJS development and already have it installed, simply run the `init` make task
 
     make init
-    
+
 And then start the application
-    
+
     npm start
-    
+
 Then go to [http://localhost:3000](http://localhost:3000).
 
 ### Prerequisites
@@ -40,17 +40,16 @@ You are going to need a few things to begin. Firstly, NodeJS. There are a few wa
 
 Node version manager allows you to install multiple versions side by side on the host machine.
 
-Once you have that installed, you will need to install the dependencies (locally) and [GulpJS](https://gulpjs.com) (globally). This task runner is used to compile the [Sass](https://sass-lang.com) used in the GovUK Frontend.
+Once you have that installed, you will need to install the dependencies (locally).
 
     npm i
-    npm install gulp-cli -g
-    
+
 ### Running the server
 
 There are two ways to run the server in development. You run it in normal mode;
 
     npm start
-    
+
 Or, automatically reload the server once you make changes to source code;
 
     npm start:watch
@@ -59,8 +58,8 @@ Or, automatically reload the server once you make changes to source code;
 
 Sass is used to compile the css from GovUK Frontend. The `static` gulp task will build the necessary files and output them to the [dist](./dist) folder.
 
-    gulp static
-    
+    npm run gulp:static
+
 During development, static assets are served from this folder using the url prefix `/static`.
 
 ### Compiling the application
@@ -68,12 +67,12 @@ During development, static assets are served from this folder using the url pref
 TypeScript compiles down the JavaScript code that eventually gets run via NodeJS. The `build` npm task will write the JavaScript to the [dist](./dist) folder.
 
     npm run build
-    
+
 **It is this code that gets run in production.**
 
 ### Linting
 
-[TSLint](https://palantir.github.io/tslint/) is used to perform static analysis on code style.
+[ESLint](https://eslint.org/) is used to perform static analysis on code style.
 
     npm run lint
 
