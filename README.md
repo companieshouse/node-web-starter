@@ -1,6 +1,6 @@
 # Web Starter NodeJS
 
-### Overview
+## Overview
 
 The aim of this template is to give you a head start in setting up a new web application for Companies House.
 
@@ -10,13 +10,13 @@ The template uses [Express](https://expressjs.com), [TypeScript](https://typescr
 
 ## Contents
 
-- [Quick start](#quick-start)
-- [Prerequisites](#prerequisites)
-- [Running the server](#running-the-server)
-- [Static assets](#static-assets)
-- [Compiling the application](#compiling-the-application)
-- [Linting](#linting)
-- [Testing](#testing)
+    - [Quick start](#quick-start)
+    - [Prerequisites](#prerequisites)
+    - [Running the server](#running-the-server)
+    - [Static assets](#static-assets)
+    - [Compiling the application](#compiling-the-application)
+    - [Linting](#linting)
+    - [Testing](#testing)
 
 ### Quick start
 
@@ -53,7 +53,7 @@ There are two ways to run the server in development. You run it in normal mode;
     
 Or, automatically reload the server once you make changes to source code;
 
-    npm start:watch
+    npm run start:watch
 
 ### Static assets
 
