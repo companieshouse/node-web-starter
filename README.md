@@ -10,13 +10,13 @@ The template uses [Express](https://expressjs.com), [TypeScript](https://typescr
 
 ## Contents
 
-    - [Quick start](#quick-start)
-    - [Prerequisites](#prerequisites)
-    - [Running the server](#running-the-server)
-    - [Static assets](#static-assets)
-    - [Compiling the application](#compiling-the-application)
-    - [Linting](#linting)
-    - [Testing](#testing)
+- [Quick start](#quick-start)
+- [Prerequisites](#prerequisites)
+- [Running the server](#running-the-server)
+- [Static assets](#static-assets)
+- [Compiling the application](#compiling-the-application)
+- [Linting](#linting)
+- [Testing](#testing)
 
 ### Quick start
 
