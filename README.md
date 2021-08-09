@@ -1,6 +1,6 @@
 # Web Starter NodeJS
 
-### Overview
+## Overview
 
 The aim of this template is to give you a head start in setting up a new web application for Companies House.
 
@@ -53,7 +53,7 @@ There are two ways to run the server in development. You run it in normal mode;
     
 Or, automatically reload the server once you make changes to source code;
 
-    npm start:watch
+    npm run start:watch
 
 ### Static assets
 
