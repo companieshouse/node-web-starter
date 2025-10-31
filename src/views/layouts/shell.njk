@@ -1,7 +1,7 @@
 {# Extends the Companies House Page Template: https://github.com/companieshouse/ch-node-utils/blob/2.0.0/docs/page-template.md #}
 {% extends "ch-node-utils/templates/layouts/template.njk" %}
 
-{% block pageTitle %}{{ title }}{% endblock %}
+{% block pageTitle %}{{ title }} – {{ serviceName }} – GOV.UK {% endblock %}
 
 {% block head %}
   {{ super() }}
