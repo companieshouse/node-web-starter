@@ -7,7 +7,7 @@ import app from "./app";
 // start the HTTP server
 const httpServer = http.createServer(app);
 httpServer.listen(process.env.NODE_PORT, () => {
-    console.log(`Server started at: ${process.env.NODE_HOSTNAME}:${process.env.NODE_PORT}`);
+    console.log(`Server started at: http://${process.env.NODE_HOSTNAME}:${process.env.NODE_PORT}`);
 }).on("error", err => {
     logger.error(`${err.name} - HTTP Server error: ${err.message} - ${err.stack}`);
 });
@@ -21,7 +21,7 @@ if (process.env.NODE_SSL_ENABLED === "ON") {
     const httpsServer = https.createServer(credentials, app);
 
     httpsServer.listen(process.env.NODE_PORT_SSL, () => {
-        console.log(`Secure server started at: ${process.env.NODE_HOSTNAME_SECURE}:${process.env.NODE_PORT_SSL}`);
+        console.log(`Secure server started at: https://${process.env.NODE_HOSTNAME_SECURE}:${process.env.NODE_PORT_SSL}`);
     }).on("error", err => {
         logger.error(`${err.name} - HTTPS Server error: ${err.message} - ${err.stack}`);
     });
