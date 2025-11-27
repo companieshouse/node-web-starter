@@ -28,7 +28,7 @@
     "@companieshouse/ch-node-utils": "^2.1.10",
     "@companieshouse/structured-logging-node": "^2.0.4",
     "express": "^4.21.2",
-    "govuk-frontend": "5.11.0",
+    "govuk-frontend": "5.13.0",
     "nunjucks": "^3.2.4"
   },
   "devDependencies": {
