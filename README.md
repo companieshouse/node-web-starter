@@ -1,9 +1,9 @@
 
-# Typescript Web Starter for Companies House
+# Node.js Web Starter for Companies House
 
-This web-starter is designed to allow you to very quickly create a GOV_UK web app using Typescript/Node.js. It provides you with the essential building blocks (or scaffolding) for piecing together a Typescript web app and to dictate your overall project structure.
+This web-starter is designed to allow you to very quickly create a GOV.UK web app using Node.js with TypeScript. It provides you with the essential building blocks (or scaffolding) for piecing together a Typescript web app and to dictate your overall project structure.
 
-## Node Versions
+## Node.js Versions
 
 - Before downloading and installing this project, ensure you have Node version `24.9.0` installed on your device. Version `24.x.x` should still work but `24.9.0` is recommended.
 
