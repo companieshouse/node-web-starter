@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "node-web-starter-ts",
+  "name": "node-web-starter",
   "version": "1.0.0",
   "main": "dist/server.js",
   "engines": {
