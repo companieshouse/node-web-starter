@@ -21,7 +21,7 @@ There's a **To-do** list at the bottom of this document. Please take a moment to
 
 Having cloned the project into your project root, run the following commands:
 
-``` cd node-web-starter-ts```
+```cd node-web-starter```
 
 ```npm install```
 

@@ -1,5 +1,5 @@
 export default (): void => {
-    process.env.APP_NAME = "node-web-starter-ts";
+    process.env.APP_NAME = "node-web-starter";
     process.env.LOG_LEVEL = "error";
     process.env.NODE_ENV = "dev";
     process.env.NODE_PORT = "3000";
