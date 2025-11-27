@@ -3,8 +3,6 @@
 
 This web-starter is designed to allow you to very quickly create a GOV_UK web app using Typescript/Node.js. It provides you with the essential building blocks (or scaffolding) for piecing together a Typescript web app and to dictate your overall project structure.
 
-A corresponding web-starter, in native Javascript, can be found [here](https://github.com/companieshouse/node-review-web-starter-js).
-
 ## Node Versions
 
 - Before downloading and installing this project, ensure you have Node version `24.9.0` installed on your device. Version `24.x.x` should still work but `24.9.0` is recommended.
