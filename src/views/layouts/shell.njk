@@ -1,6 +1,8 @@
 {# Extends the Companies House Page Template: https://github.com/companieshouse/ch-node-utils/blob/2.0.0/docs/page-template.md #}
 {% extends "ch-node-utils/templates/layouts/template.njk" %}
 
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
 {% block pageTitle %}{{ title }} – {{ serviceName }} – GOV.UK {% endblock %}
 
 {% block head %}
@@ -8,15 +10,22 @@
   {% include "partials/__meta_header.njk" %}
 {% endblock %}
 
-{% block header %}
-  {% include "partials/__header.njk" %}
+{% block govukServiceNavigation %}
+  {{ govukServiceNavigation({
+    serviceName: serviceName,
+    serviceUrl: chsUrl
+  }) }}
+{% endblock %}
+
+{% block headerEnd %}
+  {% include "partials/phase_banner.njk" %}
 {% endblock %}
 
 {% block content %}
     {% block main_content %}{% endblock %}
 {% endblock %}
 
-{% block footer %}
+{% block govukFooter %}
   {% include "partials/__footer.njk" %}
 {% endblock %}
 

@@ -2,6 +2,7 @@
 {% extends "ch-node-utils/templates/layouts/template.njk" %}
 
 {% from "govuk/components/skip-link/macro.njk" import govukSkipLink %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 
 {% set mainContentId = "main-page-content" %}
 
@@ -12,15 +13,22 @@
   {% include "partials/__meta_header.njk" %}
 {% endblock %}
 
-{% block skipLink %}
+{% block govukSkipLink %}
   {{ govukSkipLink({
     text: "Skip to main content",
     href: "#" + mainContentId
   }) }}
 {% endblock %}
 
-{% block header %}
-  {% include "partials/__header.njk" %}
+{% block govukServiceNavigation %}
+  {{ govukServiceNavigation({
+    serviceName: serviceName,
+    serviceUrl: chsUrl
+  }) }}
+{% endblock %}
+
+{% block headerEnd %}
+  {% include "partials/phase_banner.njk" %}
 {% endblock %}
 
 {% block bodyStart %}
@@ -39,7 +47,7 @@
   </div>
 {% endblock %}
 
-{% block footer %}
+{% block govukFooter %}
   {% include "partials/__footer.njk" %}
 {% endblock %}
 
